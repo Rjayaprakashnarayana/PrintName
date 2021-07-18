@@ -1,10 +1,13 @@
+def avg1(a,n):
+    sum=0
+    for i in range(n):
+        sum+=a[i]
+    return sum/n
+
 a = []
-sum=0
 n = int(input("Enter Number of Elements in an array:"))
 for i in range(n):
     b= int(input())
     a.insert(i,b)
-    sum+=b
 print(a)
-average = sum/n
-print("average of array is "+str(average))
+print("average of array is "+str(avg1(a,n)))
