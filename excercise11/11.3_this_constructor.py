@@ -1,15 +1,15 @@
-name =""
+#called its own cunstructor explicitly...
 class Animal:
 
-    def __init__(self, name):
-        print("A " + name + " is an animal")
+    def __init__(self):
+        print("Parent class")
 
 class Mammal(Animal):
 
-    def __init__(self, name):
-        print("A " + name + " is a mammal")
+    def __init__(self):
+        print("Child class")
     def this_method(self):
-        Mammal(name) #called its own cunstructor explicitly...
+        Mammal() #called its own cunstructor with argument explicitly...
 
-m = Mammal("Dog")
+m = Mammal()
 m.this_method()
