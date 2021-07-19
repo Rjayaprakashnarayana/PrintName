@@ -1,3 +1,4 @@
+//Create an instance for the child class in child class and call non-abstract methods
 public abstract class Test {
 
     void t1()
